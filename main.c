@@ -20,8 +20,7 @@ void init() {
 	buffer = bufferCreate();
 
 	// clear window for drawing
-	termClear();
-	editorDrawRows(&buffer);
+	refreshScreen();
 }
 
 //int main(int argc, char** argv) {
@@ -33,7 +32,7 @@ int main(void) {
 		//main loop
 		c = getKey();
 		handleInput(c);
-		termClear();
+		refreshScreen();
 	}
 	
 	return 0;

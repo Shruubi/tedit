@@ -27,5 +27,7 @@ struct Buffer bufferCreate() {
 	struct Buffer b;
 	b.buff = NULL;
 	b.len = 0;
+	b.cursorX = 0;
+	b.cursorY = 0;
 	return b;
 }

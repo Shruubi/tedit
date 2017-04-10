@@ -1,3 +1,4 @@
+#define TEDIT_VERSION "0.1.0"
 #define CTRL_KEY(k) ((k) & 0x1f)
 
 struct Window {
@@ -8,6 +9,8 @@ struct Window {
 struct Buffer {
 	char* buff;
 	int len;
+	int cursorX;
+	int cursorY;
 };
 
 // main.c
