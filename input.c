@@ -1,9 +1,9 @@
+#include "tedit.h"
+
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
-#define CTRL_KEY(k) ((k) & 0x1f)
 
 char getKey() {
 	int nread;

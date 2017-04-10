@@ -1,3 +1,5 @@
+#include "tedit.h"
+
 #include <errno.h>
 #include <stdlib.h>
 #include <sys/ioctl.h>
