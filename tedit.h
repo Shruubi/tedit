@@ -13,6 +13,13 @@ struct Buffer {
 	int cursorY;
 };
 
+enum editorKey {
+  ARROW_LEFT = 1000,
+  ARROW_RIGHT,
+  ARROW_UP,
+  ARROW_DOWN
+};
+
 // main.c
 void init();
 
@@ -25,8 +32,8 @@ void enableRawMode();
 int getWindowSize(int *rows, int *cols);
 
 // input.c
-char getKey();
-void handleInput(char input);
+int getKey();
+void handleInput(int input);
 
 // buffer.c
 void bufferAppend(struct Buffer* buffer, const char* str, int len);

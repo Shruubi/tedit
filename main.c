@@ -25,7 +25,7 @@ void init() {
 
 //int main(int argc, char** argv) {
 int main(void) {
-	char c; //store input
+	int c; //store input
 
 	init(); //bootstrap
 	while(1) {
